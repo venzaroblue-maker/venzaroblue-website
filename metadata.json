@@ -1,0 +1,6 @@
+{
+  "name": "Venzaroblue Wholesale",
+  "description": "B2B wholesale men's jeans manufacturer and supplier in India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
