@@ -14,7 +14,6 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
       <img src={logo} alt="VenzaroBlue Logo" className="w-10 h-10 object-contain" />
-            </div>
             <span className="font-heading font-bold text-2xl tracking-tight text-brand-blue">
               VENZAROBLUE
             </span>
