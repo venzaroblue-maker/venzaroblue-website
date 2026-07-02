@@ -1,4 +1,4 @@
-import manufacturingImg from '../assets/images/manufacturing_process_1782916717185.jpg';
+
 import { ShieldCheck, Truck, Scissors, ThumbsUp, Factory, Users } from 'lucide-react';
 
 const features = [
