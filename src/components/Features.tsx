@@ -1,4 +1,4 @@
-
+import manufacturingImg from '../assets/images/hero_jeans_1782916697346.jpg';
 import { ShieldCheck, Truck, Scissors, ThumbsUp, Factory, Users } from 'lucide-react';
 
 const features = [
