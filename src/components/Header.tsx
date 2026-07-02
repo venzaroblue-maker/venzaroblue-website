@@ -1,5 +1,6 @@
 import { Phone, Menu, X, MessageCircle } from 'lucide-react';
 import { useState } from 'react';
+import logo from '../assets/images/VenzaroBlue_Logo_Modern_HD.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,10 +13,7 @@ export default function Header() {
     <header className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center gap-3">
-            {/* The user can replace this placeholder with their uploaded image */}
-            <div className="w-10 h-10 bg-brand-blue rounded flex items-center justify-center text-white font-bold text-xl">
-              V
+      <img src={logo} alt="VenzaroBlue Logo" className="w-10 h-10 object-contain" />
             </div>
             <span className="font-heading font-bold text-2xl tracking-tight text-brand-blue">
               VENZAROBLUE
