@@ -47,7 +47,7 @@ export default function App() {
       <Header />
       <main>
         <Hero />
-        <DenimStory />
+       
         <About />
         <Products />
         <ProductCatalog />
