@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import DenimStory from './components/DenimStory';
+
 import About from './components/About';
 import Products from './components/Products';
 import ProductCatalog from './components/ProductCatalog';
