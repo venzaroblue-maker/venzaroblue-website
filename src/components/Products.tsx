@@ -1,14 +1,15 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Search, Filter } from 'lucide-react';
-import slimFitImg from '../assets/images/slim_fit_jeans_1782916749389.jpg';
-import regularFitImg from '../assets/images/regular_fit_jeans_1782916765785.jpg';
-import straightFitImg from '../assets/images/straight_fit_jeans_1782917895472.jpg';
-import baggyFitImg from '../assets/images/baggy_fit_jeans_1782917911435.jpg';
-import stretchDenimImg from '../assets/images/stretch_denim_jeans_1782917924440.jpg';
-import vintageWashImg from '../assets/images/vintage_wash_jeans_1782917935863.jpg';
-import cargoPantsImg from '../assets/images/cargo_pants_mens_1782917947795.jpg';
-import chinosImg from '../assets/images/chinos_mens_1782917958466.jpg';
-import joggersImg from '../assets/images/joggers_mens_1782917972917.jpg';
+import slimFitImg from '../assets/images/hero_jeans_1782916697346.webp';
+import regularFitImg from '../assets/images/regular_fit_jeans_1782916765785.webp';
+import straightFitImg from '../assets/images/straight_fit_jeans_1782917895472.webp';
+import baggyFitImg from '../assets/images/baggy_fit_jeans_1782917911435.webp';
+import stretchDenimImg from '../assets/images/stretch_denim_jeans_1782917924440.webp';
+import vintageWashImg from '../assets/images/vintage_wash_jeans_1782917935863.webp';
+import cargoPantsImg from '../assets/images/cargo_pants_mens_1782917947795.webp';
+import chinosImg from '../assets/images/chinos_mens_1782917958466.webp';
+import joggersImg from '../assets/images/joggers_mens_1782917972917.webp';
 
 const products = [
   {
@@ -120,6 +121,7 @@ export default function Products() {
                       <img 
                         src={item.image} 
                         alt={item.name} 
+                        loading="lazy"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       {item.tag && (
@@ -129,9 +131,9 @@ export default function Products() {
                       )}
                       <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       <div className="absolute bottom-4 left-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-4 group-hover:translate-y-0">
-                        <a href="#contact" className="flex-1 bg-white text-gray-900 text-center py-2.5 rounded-lg font-medium hover:bg-gray-50 transition-colors">
+                        <Link to="/contact" className="flex-1 bg-white text-gray-900 text-center py-2.5 rounded-lg font-medium hover:bg-gray-50 transition-colors">
                           Enquire Bulk
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="p-6">

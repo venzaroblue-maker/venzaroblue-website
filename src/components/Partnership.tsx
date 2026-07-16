@@ -1,4 +1,4 @@
-import partnershipImg from '../assets/images/b2b_partnership_1782919155102.jpg';
+import partnershipImg from '../assets/images/b2b_partnership_1782919155102.webp';
 import { Handshake, Map, ShieldCheck, TrendingUp } from 'lucide-react';
 
 export default function Partnership() {
@@ -83,6 +83,7 @@ export default function Partnership() {
               <img 
                 src={partnershipImg} 
                 alt="Venzaroblue B2B Partnership" 
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-brand-blue/20 mix-blend-multiply"></div>

@@ -37,7 +37,7 @@ export default function FloatingButtons() {
       </a>
 
       <a 
-        href="tel:6350566157"
+        href="tel:+916350566157"
         className="w-14 h-14 bg-brand-blue rounded-full flex items-center justify-center text-white shadow-xl hover:-translate-y-1 transition-all"
         aria-label="Call Us"
       >

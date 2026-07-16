@@ -1,4 +1,4 @@
-import manufacturingImg from '../assets/images/hero_jeans_1782916697346.jpg';
+import manufacturingImg from '../assets/images/hero_jeans_1782916697346.webp';
 import { ShieldCheck, Truck, Scissors, ThumbsUp, Factory, Users } from 'lucide-react';
 
 const features = [
@@ -58,6 +58,7 @@ export default function Features() {
               <img 
                 src={manufacturingImg} 
                 alt="Venzaroblue Manufacturing Facility" 
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>

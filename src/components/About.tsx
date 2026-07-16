@@ -1,4 +1,4 @@
-import jeansStackImg from '../assets/images/jeans_stack_about_1782918027139.jpg';
+import jeansStackImg from '../assets/images/jeans_stack_about_1782918027139.webp';
 
 export default function About() {
   return (
@@ -39,6 +39,7 @@ export default function About() {
               <img 
                 src={jeansStackImg} 
                 alt="Venzaroblue Premium Quality Denim" 
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -46,9 +47,6 @@ export default function About() {
             {/* Logo Overlay */}
             <div className="absolute -bottom-10 -left-10 bg-white p-8 rounded-3xl shadow-xl hidden md:block">
               <div className="text-center">
-                <div className="w-16 h-16 bg-brand-blue rounded-xl flex items-center justify-center text-white font-bold text-3xl mx-auto mb-3">
-                  V
-                </div>
                 <p className="font-heading font-bold text-xl text-brand-blue">VENZAROBLUE</p>
                 <p className="text-xs text-gray-500 font-medium tracking-widest mt-1 uppercase">Original Denim</p>
               </div>

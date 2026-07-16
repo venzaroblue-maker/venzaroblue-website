@@ -1,8 +1,9 @@
 import { ArrowRight } from 'lucide-react';
-import slimFitImg from '../assets/images/slim_fit_jeans_1782916749389.jpg';
-import regularFitImg from '../assets/images/regular_fit_jeans_1782916765785.jpg';
-import stretchDenimImg from '../assets/images/stretch_denim_jeans_1782917924440.jpg';
-import baggyFitImg from '../assets/images/baggy_fit_jeans_1782917911435.jpg';
+import { Link } from 'react-router-dom';
+import slimFitImg from '../assets/images/hero_jeans_1782916697346.webp';
+import regularFitImg from '../assets/images/regular_fit_jeans_1782916765785.webp';
+import stretchDenimImg from '../assets/images/stretch_denim_jeans_1782917924440.webp';
+import baggyFitImg from '../assets/images/baggy_fit_jeans_1782917911435.webp';
 
 const catalogCategories = [
   {
@@ -57,6 +58,7 @@ export default function ProductCatalog() {
                   <img 
                     src={category.image} 
                     alt={category.title} 
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-brand-blue/10 group-hover:bg-transparent transition-colors duration-500"></div>
@@ -83,13 +85,13 @@ export default function ProductCatalog() {
                   ))}
                 </ul>
                 
-                <a 
-                  href="#contact" 
+                <Link 
+                  to="/contact" 
                   className="inline-flex items-center gap-2 text-brand-blue font-bold hover:text-brand-blue-dark group text-lg"
                 >
                   Request Full Catalog & Pricing
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </a>
+                </Link>
               </div>
             </div>
           ))}

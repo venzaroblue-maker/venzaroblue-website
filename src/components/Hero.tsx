@@ -1,5 +1,6 @@
-import heroImage from '../assets/images/hero_jeans_1782916697346.jpg';
+import heroImage from '../assets/images/hero_jeans_1782916697346.webp';
 import { Phone, MessageCircle, ArrowRight, Package } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   const channelLink = "https://whatsapp.com/channel/0029VbChTP1GpLHN5xjJpE3y";
@@ -33,7 +34,7 @@ export default function Hero() {
           
           <div className="flex flex-col sm:flex-row gap-4">
             <a 
-              href="tel:6350566157"
+              href="tel:+916350566157"
               className="flex items-center justify-center gap-2 bg-brand-blue hover:bg-brand-blue-light text-white px-8 py-4 rounded-xl font-medium text-lg transition-all shadow-lg hover:-translate-y-1"
             >
               <Phone className="w-5 h-5" />
@@ -52,13 +53,13 @@ export default function Hero() {
           </div>
 
           <div className="mt-6 flex flex-col sm:flex-row gap-4">
-            <a 
-              href="#contact"
+            <Link 
+              to="/contact"
               className="flex items-center justify-center gap-2 bg-transparent border-2 border-white/30 hover:bg-white/10 text-white px-8 py-4 rounded-xl font-medium text-lg transition-all"
             >
               <Package className="w-5 h-5" />
               Bulk Order Enquiry
-            </a>
+            </Link>
             
             <a 
               href={channelLink}
@@ -71,6 +72,16 @@ export default function Hero() {
             </a>
           </div>
           
+          <Link
+            to="/consultancy"
+            className="mt-6 inline-flex items-center gap-2 text-brand-accent hover:text-amber-400 font-semibold transition-colors group"
+          >
+            <span className="underline underline-offset-4 decoration-brand-accent/40 group-hover:decoration-amber-400">
+              Starting your own clothing brand? Get expert consultancy
+            </span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
+
           <div className="mt-12 flex items-center gap-8 text-gray-300">
             <div>
               <p className="text-3xl font-bold text-white font-heading">10k+</p>
