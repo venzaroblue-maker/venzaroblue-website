@@ -12,9 +12,10 @@ export default function Footer() {
             VENZARO<span className="text-stitch">BLUE</span>
           </p>
           <p className="text-sm leading-relaxed text-gray-400">
-            Ahmedabad ka B2B denim partner — ready stock jeans, white label
-            manufacturing, business consulting aur practical training. Ready
-            stock se apna brand launch karne tak, sab solutions ek hi jagah.
+            Your B2B denim partner in Ahmedabad — ready stock jeans, white
+            label manufacturing, business consulting and practical training.
+            From ready stock to launching your own brand, every solution in
+            one place.
           </p>
         </div>
 

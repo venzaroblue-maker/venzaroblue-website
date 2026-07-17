@@ -4,7 +4,7 @@ import { PHONE, wa } from '../site';
 // Mobile: sticky bottom bar with two big thumb-friendly buttons (Call + WhatsApp).
 // Desktop: floating WhatsApp button bottom-right.
 export default function FloatingButtons() {
-  const link = wa('Hi Venzaroblue! Mujhe jeans ke baare mein enquiry karni hai.');
+  const link = wa('Hi Venzaroblue! I have an enquiry about your jeans.');
 
   return (
     <>

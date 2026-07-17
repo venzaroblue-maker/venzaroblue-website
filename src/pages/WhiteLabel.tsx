@@ -6,25 +6,25 @@ import { wa } from '../site';
 import heroImg from '../assets/images/stretch_denim_jeans_1782917924440.webp';
 
 const capabilities = [
-  { icon: BadgeCheck, t: 'Low MOQ', d: '50 pieces per design se apna brand shuru karein — bade order ka pressure nahi.' },
-  { icon: Layers, t: 'Premium Denim Fabric', d: 'Stretch, non-stretch, vintage wash — quality fabric jo aapke brand ki pehchaan banega.' },
-  { icon: Tag, t: 'Custom Tags & Labels', d: 'Aapke brand ke tags, buttons, patches aur packaging — sab kuch aapke naam se.' },
-  { icon: Truck, t: 'On-Time Delivery', d: '15–30 din mein production complete, pan-India delivery aapke godown tak.' },
+  { icon: BadgeCheck, t: 'Low MOQ', d: 'Start your brand with just 50 pieces per design — no pressure of large orders.' },
+  { icon: Layers, t: 'Premium Denim Fabric', d: 'Stretch, non-stretch, vintage wash — quality fabric that builds your brand identity.' },
+  { icon: Tag, t: 'Custom Tags & Labels', d: 'Your brand tags, buttons, patches and packaging — everything in your name.' },
+  { icon: Truck, t: 'On-Time Delivery', d: 'Production completed in 15–30 days, pan-India delivery to your warehouse.' },
 ];
 
 const steps = [
-  { n: '01', t: 'Design / Sample Choose Karein', d: 'Hamare ready designs mein se select karein ya apna design bhejein. Hum paid sample banakar dikhate hain — approval ke baad hi production shuru hota hai.' },
-  { n: '02', t: 'Brand Tag Lagwayein', d: 'Aapke brand ka naam, logo, tags, buttons aur packaging — poori jeans aapke brand ki identity ke saath taiyar hoti hai.' },
-  { n: '03', t: 'Delivery Lein', d: 'Quality check ke baad order pack hokar aapke address par pahunchta hai. Aap seedha bechna shuru kar sakte hain.' },
+  { n: '01', t: 'Choose Design / Sample', d: 'Select from our ready designs or send your own. We create a paid sample first — production begins only after your approval.' },
+  { n: '02', t: 'Add Your Brand Tag', d: 'Your brand name, logo, tags, buttons and packaging — the complete jeans are prepared with your brand identity.' },
+  { n: '03', t: 'Receive Delivery', d: 'After quality check, your order is packed and delivered to your address. You can start selling right away.' },
 ];
 
 const faqs = [
-  { q: 'White labeling ka matlab kya hai?', a: 'White labeling mein jeans hamari factory mein banti hai, lekin us par brand naam aapka lagta hai. Aapko factory, machine ya karigar ki zaroorat nahi — sirf apna brand aur market chahiye.' },
-  { q: 'Kya main apne brand name ke saath jeans banwa sakta hoon?', a: 'Haan, hum poori tarah se white-labeling services dete hain. Aapke design aur aapke brand ke tags/buttons ke saath jeans ready karke di jayegi.' },
-  { q: 'Minimum order quantity (MOQ) kitni hai?', a: 'Naye brands aur startups ki madad ke liye hamara MOQ bohot low hai — 50 pieces per design se aap shuru kar sakte hain.' },
-  { q: 'Kya aap sample banakar dete hain bulk order se pehle?', a: 'Bilkul. Bulk production shuru hone se pehle hum aapko ek paid sample banakar dikhate hain. Aapki approval ke baad hi factory mein kaam shuru hota hai.' },
-  { q: 'Ek order taiyar hone mein kitna time lagta hai?', a: 'Order ki quantity aur design ki complexity ke hisaab se standard time 15 se 30 din ka hota hai.' },
-  { q: 'Kya aap pan-India delivery karte hain?', a: 'Haan, hamari logistics poore India mein active hai. Aapka maal surakshit aapke godown tak pahunchaya jayega.' },
+  { q: 'What does white labeling mean?', a: 'In white labeling, the jeans are manufactured in our factory, but the brand name on them is yours. You don\'t need a factory, machines or workers — just your brand and your market.' },
+  { q: 'Can I get jeans manufactured with my own brand name?', a: 'Yes, we provide complete white-labeling services. Your jeans are made with your design and delivered ready with your brand tags and buttons.' },
+  { q: 'What is the minimum order quantity (MOQ)?', a: 'To support new brands and startups, our MOQ is very low — you can start with just 50 pieces per design.' },
+  { q: 'Do you provide a sample before the bulk order?', a: 'Absolutely. Before bulk production begins, we make a paid sample for you. Production starts at the factory only after your approval.' },
+  { q: 'How long does it take to complete an order?', a: 'Depending on the order quantity and design complexity, the standard time is 15 to 30 days.' },
+  { q: 'Do you deliver pan-India?', a: 'Yes, our logistics network is active across all of India. Your goods are delivered safely to your warehouse.' },
 ];
 
 export default function WhiteLabel() {
@@ -32,15 +32,15 @@ export default function WhiteLabel() {
     <>
       <Seo
         title="White Label Jeans Manufacturer India | Private Label Denim — Venzaroblue Ahmedabad"
-        description="Apna jeans brand launch karein bina factory ke. White label & private label jeans manufacturing Ahmedabad se — low MOQ 50 pcs, custom tags & labels, premium denim, pan-India delivery."
+        description="Launch your own jeans brand without a factory. White label & private label jeans manufacturing from Ahmedabad — low MOQ 50 pcs, custom tags & labels, premium denim, pan-India delivery."
         path="/white-label-jeans-manufacturer"
       />
       <PageHero
         eyebrow="White Label & Private Label Manufacturing"
-        title={<>Apna Jeans Brand Launch Karein — <span className="text-stitch">Hum Karenge Manufacturing</span></>}
-        subtitle="Bina factory lagaye apna brand shuru karein. Aapka design, aapke tags, aapki packaging — production hamari zimmedari."
+        title={<>Launch Your Own Jeans Brand — <span className="text-stitch">We Handle The Manufacturing</span></>}
+        subtitle="Start your brand without setting up a factory. Your design, your tags, your packaging — production is our responsibility."
         ctaLabel="Get Free Quote"
-        waMessage="Hi Venzaroblue! Mujhe white label jeans manufacturing ke liye quote chahiye. Mera brand plan: "
+        waMessage="Hi Venzaroblue! I need a quote for white label jeans manufacturing. My brand plan: "
         image={heroImg}
         imageAlt="White label jeans manufacturing Ahmedabad"
       />
@@ -69,10 +69,10 @@ export default function WhiteLabel() {
       <section className="bg-wash py-16 sm:py-24">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-heading font-bold text-3xl sm:text-4xl text-indigo-ink text-center mb-4">
-            Sirf 3 Steps Mein Aapka Brand Ready
+            Your Brand Ready In Just 3 Steps
           </h2>
           <p className="text-gray-600 text-center mb-12">
-            Process bilkul simple hai — design se delivery tak hum saath hain.
+            The process is completely simple — we are with you from design to delivery.
           </p>
           <div className="space-y-0">
             {steps.map((s, i) => (
@@ -99,27 +99,26 @@ export default function WhiteLabel() {
       <section className="bg-paper py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-5 text-gray-700 leading-relaxed">
           <h2 className="font-heading font-bold text-2xl sm:text-3xl text-indigo-ink">
-            White Label Jeans Manufacturing — Bina Factory Ke Apna Brand
+            White Label Jeans Manufacturing — Your Own Brand Without A Factory
           </h2>
           <p>
-            Aaj India mein sabse tezi se badhne waala tarika hai white label ya
-            private label jeans manufacturing. Aapko factory, machinery ya
-            karigar ki zaroorat nahi — aap sirf apne brand aur sales par focus
-            karein, production Venzaroblue ki Ahmedabad factory sambhalti hai.
+            White label or private label jeans manufacturing is one of the
+            fastest-growing business models in India today. You don't need a
+            factory, machinery or workers — you focus only on your brand and
+            sales, while Venzaroblue's Ahmedabad factory handles production.
           </p>
           <p>
-            Hum har fit mein manufacturing karte hain — slim fit, regular fit,
-            straight fit, baggy fit aur vintage wash denim. Fabric selection se
-            lekar industrial washing, stitching, aapke brand ke tags, woven
-            labels, leather patches, buttons aur final packaging tak — har step
-            quality check ke saath hota hai.
+            We manufacture every fit — slim fit, regular fit, straight fit,
+            baggy fit and vintage wash denim. From fabric selection to
+            industrial washing, stitching, your brand tags, woven labels,
+            leather patches, buttons and final packaging — every step goes
+            through quality checks.
           </p>
           <p>
-            Instagram sellers, D2C brands, retail store owners aur online
-            marketplace sellers (Amazon, Flipkart, Meesho) ke liye yeh sabse
-            kam-risk model hai: MOQ sirf 50 pieces se shuru, isliye aap chhote
-            batch se market test kar sakte hain aur demand ke hisaab se scale
-            kar sakte hain.
+            For Instagram sellers, D2C brands, retail store owners and online
+            marketplace sellers (Amazon, Flipkart, Meesho), this is the
+            lowest-risk model: MOQ starts at just 50 pieces, so you can test
+            the market with a small batch and scale up as demand grows.
           </p>
         </div>
       </section>
@@ -137,14 +136,14 @@ export default function WhiteLabel() {
       {/* CTA */}
       <section className="bg-denim text-white py-16 text-center px-4">
         <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4 text-balance">
-          Apne Brand Ki Shuruaat Aaj Karein
+          Start Your Brand Today
         </h2>
         <p className="text-blue-100 max-w-xl mx-auto mb-8">
-          Free quote ke liye WhatsApp karein — MOQ, pricing aur sample ki poori
-          details milengi.
+          WhatsApp us for a free quote — you'll get complete details on MOQ,
+          pricing and samples.
         </p>
         <a
-          href={wa('Hi Venzaroblue! White label jeans ke liye free quote chahiye.')}
+          href={wa('Hi Venzaroblue! I need a free quote for white label jeans.')}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2 bg-wa text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:brightness-95 transition"

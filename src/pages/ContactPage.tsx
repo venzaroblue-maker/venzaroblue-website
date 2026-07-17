@@ -6,7 +6,7 @@ export default function ContactPage() {
     <div className="pt-24 sm:pt-28 bg-paper">
       <Seo
         title="Contact Venzaroblue | Jeans Manufacturer Ahmedabad — WhatsApp, Call & Enquiry"
-        description="Venzaroblue se sampark karein — wholesale jeans, white label manufacturing, consulting ya training ke liye. WhatsApp +91 63505 66157. Narol Vatva Road, Ishanpur, Ahmedabad."
+        description="Contact Venzaroblue — for wholesale jeans, white label manufacturing, consulting or training. WhatsApp +91 63505 66157. Narol Vatva Road, Ishanpur, Ahmedabad."
         path="/contact"
       />
       <Contact />

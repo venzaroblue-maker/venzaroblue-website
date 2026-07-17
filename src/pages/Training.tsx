@@ -6,23 +6,23 @@ import { wa } from '../site';
 import heroImg from '../assets/images/straight_fit_jeans_1782917895472.webp';
 
 const syllabus = [
-  { q: 'Module 1 — Fabric Selection', a: 'Denim ke types (stretch, non-stretch, knitted), GSM samajhna, shrinkage test, quality check aur wholesale fabric market se sourcing ka practical tarika.' },
-  { q: 'Module 2 — Denim Pattern Cutting', a: 'Size charts, pattern making, marker planning aur fabric ki bachat karte hue cutting — industrial cutting process ka hands-on practice.' },
-  { q: 'Module 3 — Stitching Techniques', a: 'Overlock, flat-lock, chain stitch — jeans ki har seam ka industrial stitching process. Machine handling se lekar finishing tak practical training.' },
-  { q: 'Module 4 — Industrial Washing Methods', a: 'Stone wash, enzyme wash, acid wash, vintage effects — washing plant ka poora process, shade matching aur washer se kaam karwane ki knowledge.' },
+  { q: 'Module 1 — Fabric Selection', a: 'Types of denim (stretch, non-stretch, knitted), understanding GSM, shrinkage testing, quality checks and the practical way to source from wholesale fabric markets.' },
+  { q: 'Module 2 — Denim Pattern Cutting', a: 'Size charts, pattern making, marker planning and cutting while saving fabric — hands-on practice of the industrial cutting process.' },
+  { q: 'Module 3 — Stitching Techniques', a: 'Overlock, flat-lock, chain stitch — the industrial stitching process for every seam of a pair of jeans. Practical training from machine handling to finishing.' },
+  { q: 'Module 4 — Industrial Washing Methods', a: 'Stone wash, enzyme wash, acid wash, vintage effects — the complete washing plant process, shade matching and how to work with washing units.' },
 ];
 
 const forWhom = [
-  { icon: Users2, t: 'Job Seekers', d: 'Garment industry mein skilled kaam seekh kar achhi kamai waali job paayein.' },
-  { icon: Wrench, t: 'Business Starters', d: 'Apni manufacturing shuru karne se pehle kaam khud samajh lein — koi aapko bewakoof nahi bana payega.' },
-  { icon: Award, t: 'Tailors & Karigars', d: 'Apni skill ko industrial level par upgrade karein aur zyada kamai karein.' },
+  { icon: Users2, t: 'Job Seekers', d: 'Learn a skilled trade in the garment industry and land a well-paying job.' },
+  { icon: Wrench, t: 'Business Starters', d: 'Understand the work yourself before starting your own manufacturing — nobody will be able to fool you.' },
+  { icon: Award, t: 'Tailors & Artisans', d: 'Upgrade your skills to industrial level and increase your earnings.' },
 ];
 
 const faqs = [
-  { q: 'Mujhe jeans ka kaam bilkul nahi aata, kya main training le sakta hoon?', a: 'Haan, hamare paas beginners ke liye special training modules hain jisme hum cutting, stitching aur washing ki basic to advanced knowledge practical tarike se sikhate hain.' },
-  { q: 'Training kahan hoti hai — online ya offline?', a: 'Practical training hamari Ahmedabad facility mein hoti hai, kyunki machine aur washing ka kaam haath se seekhna zaroori hai. Kuch theory sessions online bhi ho sakte hain.' },
-  { q: 'Training ki duration aur fees kya hai?', a: 'Batch aur module ke hisaab se duration alag hoti hai. Current batch, fees aur seat availability ke liye WhatsApp par message karein.' },
-  { q: 'Kya training ke baad kaam ya business mein help milti hai?', a: 'Haan. Training complete hone ke baad aap chahein toh hamari consultation le kar apna setup shuru kar sakte hain, ya white label model se apna brand launch kar sakte hain.' },
+  { q: 'I know nothing about jeans making — can I still take the training?', a: 'Yes, we have special training modules for beginners where we teach cutting, stitching and washing from basic to advanced, in a fully practical way.' },
+  { q: 'Is the training online or offline?', a: 'The practical training happens at our Ahmedabad facility, because machine work and washing must be learned hands-on. Some theory sessions can also be conducted online.' },
+  { q: 'What are the training duration and fees?', a: 'Duration varies by batch and module. Message us on WhatsApp for the current batch, fees and seat availability.' },
+  { q: 'Will I get help with work or business after the training?', a: 'Yes. After completing the training, you can take our consultation to start your own setup, or launch your own brand through the white label model.' },
 ];
 
 export default function Training() {
@@ -30,15 +30,15 @@ export default function Training() {
     <>
       <Seo
         title="Jeans Manufacturing Training Ahmedabad | Denim Making Course — Pattern Cutting to Washing"
-        description="Jeans banane ka kaam seekhein — fabric selection, denim pattern cutting, stitching techniques aur industrial washing methods. Practical hands-on training Ahmedabad mein. Join next batch."
+        description="Learn jeans manufacturing — fabric selection, denim pattern cutting, stitching techniques and industrial washing methods. Practical hands-on training in Ahmedabad. Join the next batch."
         path="/jeans-manufacturing-training"
       />
       <PageHero
         eyebrow="Practical Training Program"
-        title={<>Jeans Banane Ka Kaam Seekhein — <span className="text-stitch">Pattern Cutting Se Washing Tak</span></>}
-        subtitle="Real factory environment mein hands-on training. Theory nahi, woh kaam seekhein jo industry mein actually chalta hai."
+        title={<>Learn Jeans Manufacturing — <span className="text-stitch">From Pattern Cutting To Washing</span></>}
+        subtitle="Hands-on training in a real factory environment. No theory-only classes — learn the work that actually runs in the industry."
         ctaLabel="Join Next Batch"
-        waMessage="Hi Venzaroblue! Mujhe jeans manufacturing training ke next batch mein join karna hai."
+        waMessage="Hi Venzaroblue! I want to join the next batch of jeans manufacturing training."
         image={heroImg}
         imageAlt="Jeans manufacturing training Ahmedabad"
       />
@@ -50,7 +50,7 @@ export default function Training() {
             Course Syllabus
           </h2>
           <p className="text-gray-600 text-center mb-10">
-            Har module practical hai — aap khud machine par kaam karke seekhenge.
+            Every module is practical — you learn by working on the machines yourself.
           </p>
           <Accordion items={syllabus} />
         </div>
@@ -60,7 +60,7 @@ export default function Training() {
       <section className="bg-wash py-16 sm:py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <h2 className="font-heading font-bold text-3xl sm:text-4xl text-indigo-ink text-center mb-12">
-            Yeh Training Kiske Liye Hai?
+            Who Is This Training For?
           </h2>
           <div className="grid sm:grid-cols-3 gap-6">
             {forWhom.map((f) => (
@@ -80,21 +80,20 @@ export default function Training() {
       <section className="bg-paper py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-5 text-gray-700 leading-relaxed">
           <h2 className="font-heading font-bold text-2xl sm:text-3xl text-indigo-ink">
-            Jeans Making Course — Skill Jo Kabhi Bekar Nahi Jaati
+            Jeans Making Course — A Skill That Never Goes To Waste
           </h2>
           <p>
-            Denim industry India ke sabse bade garment sectors mein se ek hai,
-            aur Ahmedabad iska major hub hai. Skilled pattern cutters, stitching
-            operators aur washing technicians ki demand hamesha bani rehti hai —
-            aur khud ka business karne waalon ke liye toh yeh knowledge sona
-            hai.
+            The denim industry is one of India's largest garment sectors, and
+            Ahmedabad is a major hub. Skilled pattern cutters, stitching
+            operators and washing technicians are always in demand — and for
+            anyone planning their own business, this knowledge is gold.
           </p>
           <p>
-            Hamari training ka sabse bada fark yeh hai ki yeh chalti hui
-            factory ke andar hoti hai. Aap real orders ke saath, real machines
-            par, real production process seekhte hain — fabric aane se lekar
-            washed jeans pack hone tak ka poora cycle apni aankhon se dekhte
-            aur haathon se karte hain.
+            The biggest difference in our training is that it happens inside a
+            running factory. You learn with real orders, on real machines,
+            through the real production process — watching and working through
+            the entire cycle, from fabric arriving to washed jeans being
+            packed.
           </p>
         </div>
       </section>
@@ -112,13 +111,13 @@ export default function Training() {
       {/* CTA */}
       <section className="bg-denim text-white py-16 text-center px-4">
         <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4 text-balance">
-          Next Batch Mein Seat Book Karein
+          Book Your Seat In The Next Batch
         </h2>
         <p className="text-blue-100 max-w-xl mx-auto mb-8">
-          Seats limited hoti hain — batch details aur fees ke liye abhi message karein.
+          Seats are limited — message us now for batch details and fees.
         </p>
         <a
-          href={wa('Hi Venzaroblue! Jeans manufacturing training ke next batch ki details chahiye.')}
+          href={wa('Hi Venzaroblue! I want details of the next jeans manufacturing training batch.')}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2 bg-wa text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:brightness-95 transition"

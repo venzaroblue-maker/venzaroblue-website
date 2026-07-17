@@ -17,28 +17,28 @@ const solutions = [
   {
     icon: Package,
     title: 'Ready Stock Jeans',
-    desc: 'Wholesale rates par ready stock — slim, straight, baggy fits. Aaj order karein, turant dispatch.',
+    desc: 'Ready stock at wholesale rates — slim, straight and baggy fits. Order today, instant dispatch.',
     to: '/ready-stock-jeans',
     label: 'For retailers & resellers',
   },
   {
     icon: Tag,
     title: 'White Label Manufacturing',
-    desc: 'Aapka brand name, hamari factory. Custom tags, labels aur packaging ke saath jeans manufacturing.',
+    desc: 'Your brand name, our factory. Jeans manufacturing with custom tags, labels and packaging.',
     to: '/white-label-jeans-manufacturer',
     label: 'For new brands',
   },
   {
     icon: Users,
     title: 'Business Consulting',
-    desc: 'Costing, fabric sourcing, washing — jeans business ki har uljhan ka expert solution 1-on-1 call par.',
+    desc: 'Costing, fabric sourcing, washing — expert solutions for every jeans business problem on a 1-on-1 call.',
     to: '/jeans-business-consulting',
     label: 'For startups & traders',
   },
   {
     icon: GraduationCap,
     title: 'Manufacturing Training',
-    desc: 'Pattern cutting se washing tak — jeans banane ka poora kaam practical tarike se seekhein.',
+    desc: 'From pattern cutting to washing — learn the complete jeans manufacturing process hands-on.',
     to: '/jeans-manufacturing-training',
     label: 'For learners',
   },
@@ -53,24 +53,24 @@ const collection = [
 
 const faqs = [
   {
-    q: 'Kya main apne brand name ke saath jeans banwa sakta hoon?',
-    a: 'Haan, hum poori tarah se white-labeling services dete hain. Aapke design aur aapke brand ke tags/buttons ke saath jeans ready karke di jayegi.',
+    q: 'Can I get jeans manufactured with my own brand name?',
+    a: 'Yes, we provide complete white-labeling services. Your jeans are made with your design and delivered ready with your brand tags and buttons.',
   },
   {
-    q: 'Minimum order quantity (MOQ) kitni hoti hai?',
-    a: 'Naye brands aur startups ki madad ke liye hamara MOQ bohot low hai — 50 pieces per design se aap shuru kar sakte hain.',
+    q: 'What is the minimum order quantity (MOQ)?',
+    a: 'To support new brands and startups, our MOQ is very low — you can start with just 50 pieces per design.',
   },
   {
-    q: 'Kya aap sample banakar dete hain bulk order se pehle?',
-    a: 'Bilkul. Bulk production shuru hone se pehle hum aapko ek paid sample banakar dikhate hain. Aapki approval ke baad hi factory mein kaam shuru hota hai.',
+    q: 'Do you provide a sample before the bulk order?',
+    a: 'Absolutely. Before bulk production begins, we make a paid sample for you. Production starts at the factory only after your approval.',
   },
   {
-    q: 'Ek jeans order taiyar hone mein kitna time lagta hai?',
-    a: 'Order ki quantity aur design ki complexity ke hisaab se standard time 15 se 30 din ka hota hai.',
+    q: 'How long does it take to complete a jeans order?',
+    a: 'Depending on the order quantity and design complexity, the standard time is 15 to 30 days.',
   },
   {
-    q: 'Kya aap pan-India delivery karte hain?',
-    a: 'Haan, hamari logistics poore India mein active hai. Aapka maal surakshit aapke godown tak pahunchaya jayega.',
+    q: 'Do you deliver pan-India?',
+    a: 'Yes, our logistics network is active across all of India. Your goods are delivered safely to your warehouse.',
   },
 ];
 
@@ -79,7 +79,7 @@ export default function Home() {
     <>
       <Seo
         title="Venzaroblue | Jeans Manufacturer Ahmedabad — White Label, Wholesale & Business Consulting"
-        description="Ahmedabad ka complete jeans business partner: ready stock wholesale jeans, white label manufacturing, jeans business consulting aur manufacturing training. MOQ 50 pcs, pan-India delivery."
+        description="Your complete jeans business partner in Ahmedabad: ready stock wholesale jeans, white label manufacturing, jeans business consulting and manufacturing training. MOQ 50 pcs, pan-India delivery."
         path="/"
       />
 
@@ -98,21 +98,21 @@ export default function Home() {
             Jeans Manufacturer · Ahmedabad
           </p>
           <h1 className="font-heading font-bold text-4xl sm:text-6xl leading-[1.1] text-balance mb-6">
-            Ready Stock Se Apna Brand Tak —{' '}
-            <span className="text-stitch">Jeans Ka Har Solution</span> Ek Jagah
+            From Ready Stock To Your Own Brand —{' '}
+            <span className="text-stitch">Every Jeans Solution</span> In One Place
           </h1>
           <p className="text-gray-300 text-base sm:text-xl max-w-2xl mx-auto mb-9">
             Wholesale ready stock, white label manufacturing, business
-            consulting aur training — jo bhi stage par ho aapka jeans business,
-            hum saath hain.
+            consulting and training — whatever stage your jeans business is at,
+            we are with you.
           </p>
           <a
-            href={wa('Hi Venzaroblue! Mujhe jeans business solution ke baare mein jaanna hai.')}
+            href={wa('Hi Venzaroblue! I want to know about your jeans business solutions.')}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-wa text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:brightness-95 transition w-full sm:w-auto max-w-sm mx-auto"
           >
-            <MessageCircle className="w-6 h-6" /> WhatsApp Par Baat Karein
+            <MessageCircle className="w-6 h-6" /> Chat On WhatsApp
           </a>
         </div>
         <div className="selvedge relative" aria-hidden="true" />
@@ -122,11 +122,11 @@ export default function Home() {
       <section className="bg-paper py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading font-bold text-3xl sm:text-4xl text-indigo-ink text-center mb-3">
-            Aap Kis Stage Par Hain?
+            What Stage Are You At?
           </h2>
           <p className="text-gray-600 text-center max-w-xl mx-auto mb-12">
-            Chaaro solutions Ahmedabad ki hamari hi factory se — beech mein koi
-            agent nahi, seedha kaam.
+            All four solutions come from our own factory in Ahmedabad — no
+            middlemen, just direct work.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {solutions.map((s) => (
@@ -148,7 +148,7 @@ export default function Home() {
                   {s.desc}
                 </p>
                 <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-denim group-hover:gap-2.5 transition-all">
-                  Aur Jaanein <ArrowRight className="w-4 h-4" />
+                  Learn More <ArrowRight className="w-4 h-4" />
                 </span>
               </Link>
             ))}
@@ -164,13 +164,13 @@ export default function Home() {
               <h2 className="font-heading font-bold text-3xl sm:text-4xl text-indigo-ink mb-2">
                 Ready Stock Collection
               </h2>
-              <p className="text-gray-600">Wholesale rates. MOQ sirf 50 pieces.</p>
+              <p className="text-gray-600">Wholesale rates. MOQ just 50 pieces.</p>
             </div>
             <Link
               to="/ready-stock-jeans"
               className="hidden sm:inline-flex items-center gap-1.5 font-semibold text-denim hover:gap-2.5 transition-all"
             >
-              Poora Collection <ArrowRight className="w-4 h-4" />
+              View Full Collection <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -201,7 +201,7 @@ export default function Home() {
             to="/ready-stock-jeans"
             className="sm:hidden mt-6 flex items-center justify-center gap-2 border-2 border-denim text-denim py-3.5 rounded-xl font-semibold"
           >
-            Poora Collection Dekhein <ArrowRight className="w-4 h-4" />
+            View Full Collection <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </section>
@@ -210,14 +210,14 @@ export default function Home() {
       <section className="bg-paper py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading font-bold text-3xl sm:text-4xl text-indigo-ink text-center mb-12">
-            Venzaroblue Hi Kyun?
+            Why Venzaroblue?
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Factory, t: 'Apni Factory, Ahmedabad', d: 'Direct manufacturer — koi middleman nahi, isliye rates sabse competitive.' },
-              { icon: BadgeCheck, t: 'Low MOQ — 50 Pcs', d: 'Naye brands ke liye chhote order se shuruaat, risk kam.' },
-              { icon: Scissors, t: 'Premium Denim & Finish', d: 'Quality fabric, industrial washing aur double-checked stitching.' },
-              { icon: Truck, t: 'Pan-India Delivery', d: 'Trusted logistics se aapke godown tak surakshit delivery.' },
+              { icon: Factory, t: 'Own Factory, Ahmedabad', d: 'Direct manufacturer — no middlemen, which means the most competitive rates.' },
+              { icon: BadgeCheck, t: 'Low MOQ — 50 Pcs', d: 'Start small with low risk — perfect for new brands testing the market.' },
+              { icon: Scissors, t: 'Premium Denim & Finish', d: 'Quality fabric, industrial washing and double-checked stitching.' },
+              { icon: Truck, t: 'Pan-India Delivery', d: 'Safe delivery to your warehouse through trusted logistics partners.' },
             ].map((f) => (
               <div key={f.t} className="text-center">
                 <div className="w-14 h-14 mx-auto rounded-2xl bg-wash flex items-center justify-center mb-4">
@@ -235,7 +235,7 @@ export default function Home() {
       <section className="bg-wash py-16 sm:py-24">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="font-heading font-bold text-3xl sm:text-4xl text-indigo-ink text-center mb-10">
-            Aksar Puche Jaane Waale Sawaal
+            Frequently Asked Questions
           </h2>
           <Accordion items={faqs} />
         </div>
@@ -244,18 +244,18 @@ export default function Home() {
       {/* FINAL CTA */}
       <section className="bg-denim text-white py-16 text-center px-4">
         <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4 text-balance">
-          Jeans Business Mein Aage Badhna Hai?
+          Ready To Grow Your Jeans Business?
         </h2>
         <p className="text-blue-100 max-w-xl mx-auto mb-8">
-          WhatsApp par message karein — 24 ghante ke andar reply milega.
+          Message us on WhatsApp — you will get a reply within 24 hours.
         </p>
         <a
-          href={wa('Hi Venzaroblue! Mujhe apne jeans business ke liye baat karni hai.')}
+          href={wa('Hi Venzaroblue! I want to discuss my jeans business.')}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2 bg-wa text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:brightness-95 transition"
         >
-          <MessageCircle className="w-6 h-6" /> Abhi Message Karein
+          <MessageCircle className="w-6 h-6" /> Message Us Now
         </a>
       </section>
     </>

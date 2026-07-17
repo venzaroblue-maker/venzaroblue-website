@@ -34,7 +34,7 @@ export default function Header() {
 
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href={wa('Hi Venzaroblue, mujhe jeans business ke baare mein jaankari chahiye.')}
+              href={wa('Hi Venzaroblue! I would like to know more about your jeans business solutions.')}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-wa text-white px-4 py-2 rounded-full text-sm font-semibold hover:brightness-95 transition"
@@ -79,7 +79,7 @@ export default function Header() {
             </NavLink>
           ))}
           <a
-            href={wa('Hi Venzaroblue, mujhe jeans business ke baare mein jaankari chahiye.')}
+            href={wa('Hi Venzaroblue! I would like to know more about your jeans business solutions.')}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 flex items-center justify-center gap-2 bg-wa text-white py-3.5 rounded-xl font-semibold"

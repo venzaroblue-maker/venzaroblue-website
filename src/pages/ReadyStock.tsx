@@ -20,10 +20,10 @@ const products = [
 ];
 
 const faqs = [
-  { q: 'Kaun order kar sakta hai?', a: 'Retailers, resellers, online sellers (Amazon/Flipkart/Meesho) aur distributors — sabhi B2B buyers order kar sakte hain. Hum retail single-piece selling nahi karte.' },
-  { q: 'Wholesale rate kya hai?', a: 'Rate quantity ke hisaab se hota hai — jitni zyada quantity, utna better rate. Exact pricing ke liye WhatsApp par style aur quantity bhejein, turant quote milega.' },
-  { q: 'Minimum kitne pieces ka order karna hoga?', a: 'Ready stock mein MOQ 50 pieces se shuru hota hai. Mixed sizes aur mixed styles ka combination bhi possible hai.' },
-  { q: 'Delivery kaise hoti hai?', a: 'Pan-India delivery trusted transport partners se hoti hai. Dispatch ke baad tracking details aapko WhatsApp par mil jaati hain.' },
+  { q: 'Who can place an order?', a: 'Retailers, resellers, online sellers (Amazon/Flipkart/Meesho) and distributors — all B2B buyers can order. We do not sell single pieces at retail.' },
+  { q: 'What are the wholesale rates?', a: 'Rates depend on quantity — the higher the quantity, the better the rate. For exact pricing, send the style and quantity on WhatsApp and you\'ll get an instant quote.' },
+  { q: 'What is the minimum order?', a: 'Ready stock MOQ starts at 50 pieces. A combination of mixed sizes and mixed styles is also possible.' },
+  { q: 'How does delivery work?', a: 'Pan-India delivery through trusted transport partners. After dispatch, tracking details are shared with you on WhatsApp.' },
 ];
 
 export default function ReadyStock() {
@@ -31,7 +31,7 @@ export default function ReadyStock() {
     <>
       <Seo
         title="Wholesale Mens Jeans Ready Stock Ahmedabad | Bulk Jeans Supplier India — Venzaroblue"
-        description="Ready stock mens jeans wholesale rates par — regular, straight, baggy, stretch, vintage wash & cargo. MOQ 50 pcs, direct factory rates, pan-India delivery. Bulk jeans supplier Ahmedabad."
+        description="Ready stock mens jeans at wholesale rates — regular, straight, baggy, stretch, vintage wash & cargo. MOQ 50 pcs, direct factory rates, pan-India delivery. Bulk jeans supplier Ahmedabad."
         path="/ready-stock-jeans"
       />
 
@@ -42,10 +42,10 @@ export default function ReadyStock() {
             Wholesale Ready Stock · Direct Factory Rates
           </p>
           <h1 className="font-heading font-bold text-3xl sm:text-5xl leading-tight text-balance mb-5">
-            Ready Stock Jeans — <span className="text-stitch">Aaj Order, Turant Dispatch</span>
+            Ready Stock Jeans — <span className="text-stitch">Order Today, Instant Dispatch</span>
           </h1>
           <p className="text-gray-300 max-w-2xl mx-auto mb-8">
-            Retailers aur resellers ke liye curated collection. MOQ sirf 50
+            A curated collection for retailers and resellers. MOQ just 50
             pieces, mixed sizes possible.
           </p>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-gray-300">
@@ -78,21 +78,21 @@ export default function ReadyStock() {
                   <h3 className="font-heading font-semibold text-indigo-ink text-sm sm:text-base">{p.name}</h3>
                   <p className="text-xs text-gray-500 mt-1 mb-3">Sizes: {p.sizes}</p>
                   <a
-                    href={wa(`Hi Venzaroblue! Mujhe ${p.name} ka wholesale rate aur available stock chahiye.`)}
+                    href={wa(`Hi Venzaroblue! I need the wholesale rate and available stock for ${p.name}.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-auto flex items-center justify-center gap-1.5 bg-denim text-white py-2.5 rounded-xl text-xs sm:text-sm font-semibold hover:bg-indigo-ink transition"
                   >
-                    <MessageCircle className="w-4 h-4" /> Rate Puchein
+                    <MessageCircle className="w-4 h-4" /> Ask For Rate
                   </a>
                 </div>
               </div>
             ))}
           </div>
           <p className="text-center text-gray-500 text-sm mt-8">
-            Aur bhi styles available hain — latest catalog ke liye WhatsApp par{' '}
-            <a href={wa('Hi! Mujhe latest jeans catalog chahiye.')} target="_blank" rel="noopener noreferrer" className="text-denim font-semibold underline">
-              "CATALOG" bhejein
+            More styles available — for the latest catalog, send{' '}
+            <a href={wa('Hi! I want the latest jeans catalog.')} target="_blank" rel="noopener noreferrer" className="text-denim font-semibold underline">
+              "CATALOG" on WhatsApp
             </a>.
           </p>
         </div>
@@ -102,19 +102,20 @@ export default function ReadyStock() {
       <section className="bg-wash py-14 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-5 text-gray-700 leading-relaxed">
           <h2 className="font-heading font-bold text-2xl sm:text-3xl text-indigo-ink">
-            Bulk Jeans Supplier Ahmedabad — Direct Factory Se
+            Bulk Jeans Supplier Ahmedabad — Direct From The Factory
           </h2>
           <p>
-            Venzaroblue Ahmedabad se ready stock mens jeans ka direct
-            manufacturer aur bulk supplier hai. Kyunki maal hamari apni factory
-            se aata hai, aapko wholesale market se behtar rate aur consistent
-            quality milti hai — har lot mein same fitting, same shade.
+            Venzaroblue is a direct manufacturer and bulk supplier of ready
+            stock men's jeans from Ahmedabad. Because the goods come from our
+            own factory, you get better rates than the wholesale market and
+            consistent quality — the same fitting and the same shade in every
+            lot.
           </p>
           <p>
-            Retail store owners, online sellers aur distributors ke liye hum
-            mixed size ratio (28 se 36) aur mixed styles ka flexible order
-            system rakhte hain, taaki aapka stock jaldi rotate ho aur paisa
-            block na ho.
+            For retail store owners, online sellers and distributors, we offer
+            a flexible order system with mixed size ratios (28 to 36) and mixed
+            styles — so your stock rotates quickly and your money never stays
+            blocked.
           </p>
         </div>
       </section>
@@ -132,19 +133,19 @@ export default function ReadyStock() {
       {/* CTA */}
       <section className="bg-denim text-white py-16 text-center px-4">
         <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4 text-balance">
-          Aaj Ka Stock & Rate List Paayein
+          Get Today's Stock & Rate List
         </h2>
         <p className="text-blue-100 max-w-xl mx-auto mb-8">
-          WhatsApp par message karein — available stock, size ratio aur rates
-          turant milenge.
+          Message us on WhatsApp — available stock, size ratios and rates
+          shared instantly.
         </p>
         <a
-          href={wa('Hi Venzaroblue! Mujhe ready stock jeans ki rate list chahiye.')}
+          href={wa('Hi Venzaroblue! I want the ready stock jeans rate list.')}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2 bg-wa text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:brightness-95 transition"
         >
-          <MessageCircle className="w-6 h-6" /> Rate List Mangayein
+          <MessageCircle className="w-6 h-6" /> Request Rate List
         </a>
       </section>
     </>
