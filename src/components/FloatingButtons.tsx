@@ -1,49 +1,41 @@
 import { Phone, MessageCircle } from 'lucide-react';
+import { PHONE, wa } from '../site';
 
+// Mobile: sticky bottom bar with two big thumb-friendly buttons (Call + WhatsApp).
+// Desktop: floating WhatsApp button bottom-right.
 export default function FloatingButtons() {
-  const whatsappLink = "https://wa.me/916350566157";
-  const channelLink = "https://whatsapp.com/channel/0029VbChTP1GpLHN5xjJpE3y";
+  const link = wa('Hi Venzaroblue! Mujhe jeans ke baare mein enquiry karni hai.');
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
-      
-      {/* Join Channel Tooltip */}
-      <div className="absolute right-full mr-4 top-2 hidden md:flex items-center w-max animate-bounce">
-        <div className="bg-white text-gray-900 text-sm font-medium px-4 py-2 rounded-lg shadow-lg border border-gray-100 flex items-center gap-2">
-          <MessageCircle className="w-4 h-4 text-[#25D366]" />
-          Join Our Channel
-          <div className="absolute top-1/2 -right-2 -translate-y-1/2 border-8 border-transparent border-l-white border-l-[10px]"></div>
-        </div>
+    <>
+      {/* Mobile sticky bar */}
+      <div className="fixed bottom-0 inset-x-0 z-40 grid grid-cols-2 lg:hidden shadow-[0_-4px_16px_rgba(0,0,0,0.12)]">
+        <a
+          href={`tel:${PHONE}`}
+          className="flex items-center justify-center gap-2 bg-denim text-white py-4 font-semibold text-base active:bg-indigo-ink"
+        >
+          <Phone className="w-5 h-5" /> Call Now
+        </a>
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-2 bg-wa text-white py-4 font-semibold text-base active:brightness-90"
+        >
+          <MessageCircle className="w-5 h-5" /> WhatsApp
+        </a>
       </div>
 
-      <a 
-        href={channelLink}
+      {/* Desktop float */}
+      <a
+        href={link}
         target="_blank"
-        rel="noreferrer"
-        className="w-14 h-14 bg-white border border-gray-200 rounded-full flex items-center justify-center text-[#25D366] shadow-xl hover:-translate-y-1 transition-all group"
-        aria-label="Join WhatsApp Channel"
-      >
-        <MessageCircle className="w-7 h-7" />
-      </a>
-
-      <a 
-        href={whatsappLink}
-        target="_blank"
-        rel="noreferrer"
-        className="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-xl hover:-translate-y-1 transition-all"
+        rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
+        className="hidden lg:flex fixed bottom-6 right-6 z-40 items-center gap-2 bg-wa text-white pl-4 pr-5 py-3.5 rounded-full font-semibold shadow-xl hover:scale-105 transition-transform"
       >
-        <MessageCircle className="w-7 h-7" />
+        <MessageCircle className="w-6 h-6" /> WhatsApp
       </a>
-
-      <a 
-        href="tel:+916350566157"
-        className="w-14 h-14 bg-brand-blue rounded-full flex items-center justify-center text-white shadow-xl hover:-translate-y-1 transition-all"
-        aria-label="Call Us"
-      >
-        <Phone className="w-6 h-6" />
-      </a>
-
-    </div>
+    </>
   );
 }

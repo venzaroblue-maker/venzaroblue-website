@@ -1,90 +1,66 @@
-import { Phone, MessageCircle, Mail, MapPin, Instagram, Facebook } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Phone, Mail, MapPin } from 'lucide-react';
+import { EMAIL, PHONE, PHONE_DISPLAY, PHONE_2_DISPLAY, NAV } from '../site';
 
 export default function Footer() {
-  const channelLink = "https://whatsapp.com/channel/0029VbChTP1GpLHN5xjJpE3y";
-  const facebookLink = "https://www.facebook.com/profile.php?id=61591171756013";
-  const instagramLink = "https://www.instagram.com/venzaroblue_b2b?igsh=MWJsbXAxenhoMTAxMA==";
-  const whatsappLink = "https://wa.me/916350566157";
-
   return (
-    <footer className="bg-gray-900 text-gray-300 pt-20 pb-10 border-t border-gray-800 mt-auto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          
-          <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-6">
-              <span className="font-heading font-bold text-2xl tracking-tight text-white">
-                VENZAROBLUE
-              </span>
-            </div>
-            <p className="text-gray-400 mb-6 leading-relaxed">
-              India's premier B2B wholesale manufacturer of premium men's jeans. Delivering unparalleled quality, perfect fits, and high margins for retailers nationwide.
-            </p>
-            <div className="flex gap-4">
-              <a href={facebookLink} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-blue hover:text-white transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href={instagramLink} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-accent hover:text-white transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Quick Links</h4>
-            <ul className="space-y-3">
-              <li><Link to="/about" className="hover:text-brand-blue transition-colors">About Company</Link></li>
-              <li><Link to="/products" className="hover:text-brand-blue transition-colors">Wholesale Collection</Link></li>
-              <li><Link to="/consultancy" className="hover:text-brand-blue transition-colors">Business Consultancy</Link></li>
-              <li><Link to="/contact" className="hover:text-brand-blue transition-colors">Bulk Enquiry</Link></li>
-              <li><a href={channelLink} target="_blank" rel="noreferrer" className="text-[#25D366] hover:text-[#128C7E] transition-colors">Join WhatsApp Channel</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Products</h4>
-            <ul className="space-y-3">
-              <li><Link to="/products" className="hover:text-brand-blue transition-colors">Premium Men's Jeans</Link></li>
-              <li><Link to="/products" className="hover:text-brand-blue transition-colors">Slim & Regular Fit</Link></li>
-              <li><Link to="/products" className="hover:text-brand-blue transition-colors">Straight & Baggy Fit</Link></li>
-              <li><Link to="/products" className="hover:text-brand-blue transition-colors">Cargo Pants</Link></li>
-              <li><Link to="/products" className="hover:text-brand-blue transition-colors">Chinos & Joggers</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Contact Us</h4>
-            <ul className="space-y-4">
-              <li className="flex gap-3">
-                <Phone className="w-5 h-5 text-brand-blue flex-shrink-0" />
-                <a href="tel:+916350566157" className="hover:text-white transition-colors">6350566157<br/>9672110755</a>
-              </li>
-              <li className="flex gap-3">
-                <MessageCircle className="w-5 h-5 text-[#25D366] flex-shrink-0" />
-                <a href={whatsappLink} target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Chat on WhatsApp</a>
-              </li>
-              <li className="flex gap-3">
-                <Mail className="w-5 h-5 text-brand-blue flex-shrink-0" />
-                <a href="mailto:venzaroblue@gmail.com" className="hover:text-white transition-colors">venzaroblue@gmail.com</a>
-              </li>
-              <li className="flex gap-3 text-gray-400">
-                <MapPin className="w-5 h-5 text-brand-blue flex-shrink-0 mt-1" />
-                <span>D-704 pushkar elegance narol vatva road, Ishanpur, Ahmedabad</span>
-              </li>
-            </ul>
-          </div>
-
+    <footer className="bg-indigo-ink text-gray-300">
+      <div className="selvedge" aria-hidden="true" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid gap-10 md:grid-cols-3">
+        <div>
+          <p className="font-heading font-bold text-2xl text-white mb-3">
+            VENZARO<span className="text-stitch">BLUE</span>
+          </p>
+          <p className="text-sm leading-relaxed text-gray-400">
+            Ahmedabad ka B2B denim partner — ready stock jeans, white label
+            manufacturing, business consulting aur practical training. Ready
+            stock se apna brand launch karne tak, sab solutions ek hi jagah.
+          </p>
         </div>
 
-        <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} Venzaroblue. All rights reserved. Wholesale Only.
+        <nav aria-label="Footer">
+          <p className="font-semibold text-white mb-4">Our Solutions</p>
+          <ul className="space-y-2.5 text-sm">
+            {NAV.map((n) => (
+              <li key={n.to}>
+                <Link to={n.to} className="hover:text-white transition-colors">
+                  {n.label === 'Ready Stock' ? 'Ready Stock Jeans (Wholesale)' :
+                   n.label === 'White Label' ? 'White Label Jeans Manufacturing' :
+                   n.label === 'Consulting' ? 'Jeans Business Consulting' :
+                   n.label === 'Startup Guide' ? 'Garment Startup Guide' :
+                   n.label === 'Training' ? 'Jeans Manufacturing Training' : n.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <div className="text-sm space-y-3">
+          <p className="font-semibold text-white mb-4">Contact</p>
+          <p className="flex items-start gap-2">
+            <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-stitch" />
+            D-704 Pushkar Elegance, Narol Vatva Road, Ishanpur, Ahmedabad, Gujarat
           </p>
-          <div className="flex gap-6 text-sm text-gray-500">
-            <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-white transition-colors">Terms & Conditions</Link>
-          </div>
+          <p className="flex items-center gap-2">
+            <Phone className="w-4 h-4 shrink-0 text-stitch" />
+            <a href={`tel:${PHONE}`} className="hover:text-white">{PHONE_DISPLAY}</a>
+            <span className="text-gray-500">/</span>
+            <span>{PHONE_2_DISPLAY}</span>
+          </p>
+          <p className="flex items-center gap-2">
+            <Mail className="w-4 h-4 shrink-0 text-stitch" />
+            <a href={`mailto:${EMAIL}`} className="hover:text-white">{EMAIL}</a>
+          </p>
+        </div>
+      </div>
+
+      <div className="border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row justify-between gap-3 text-xs text-gray-500">
+          <p>© {new Date().getFullYear()} Venzaroblue. All rights reserved.</p>
+          <p className="space-x-4">
+            <Link to="/privacy-policy" className="hover:text-white">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-white">Terms</Link>
+          </p>
         </div>
       </div>
     </footer>
